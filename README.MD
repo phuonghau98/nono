@@ -29,3 +29,5 @@ source ~/.bashrc
 ```
 
 <h2>INTERFACE:</h2>
+<img src='https://github.com/phuonghau98/nono/blob/master/img/CLI.png?raw=true' alt='cli1'>
+<img src='https://github.com/phuonghau98/nono/blob/master/img/CLI2.png?raw=true' alt='cli2'>
