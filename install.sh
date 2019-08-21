@@ -30,4 +30,5 @@ create_install_dir
 nono_download -s https://raw.githubusercontent.com/phuonghau98/nono/master/nono.sh -o $INSTALL_DIR/nono.sh
 chmod a+x $INSTALL_DIR/nono.sh
 echo -e "alias nono=$INSTALL_DIR/nono.sh" >> /home/$USER/.bashrc
-source $HOME/.bashrc
+exec bash
+
