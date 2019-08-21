@@ -1,5 +1,5 @@
 <h1 align='center'> 
-  Nono - A simple tools that help you save up your block devices by getting rid of node_modules.
+  Nono - A simple tool that help you free up your block devices by getting rid of node_modules.
 </h1>
 
 **Note:**  This tool currently supports only bash shell. If you use others shell, we will make this tool fit your case soon. ;-)
