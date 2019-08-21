@@ -15,11 +15,18 @@ nono_download() {
                             -e 's/-s /-q /' \
                             -e 's/-o /-O /' \
                             -e 's/-C - /-c /')
-    # shellcheck disable=SC2086
     eval wget $ARGS
   fi
 }
-mkdir $INSTALL_DIR
+
+create_install_dir () {
+  if [ ! -d $INSTALL_DIR ]
+  then
+    mkdir $INSTALL_DIR
+  fi
+}
+
+create_install_dir
 nono_download -s https://raw.githubusercontent.com/phuonghau98/nono/master/nono.sh -o $INSTALL_DIR/nono.sh
 chmod a+x $INSTALL_DIR/nono.sh
 echo -e "alias nono=$INSTALL_DIR/nono.sh" >> /home/$USER/.bashrc
